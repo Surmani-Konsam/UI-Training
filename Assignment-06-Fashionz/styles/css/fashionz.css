@@ -1,0 +1,181 @@
+body {
+  background-color: rgba(42, 43, 48, 255);
+  padding: 0%;
+  margin: 0;
+}
+
+.parent_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  margin-bottom: 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brand {
+  height: 60px;
+}
+
+.header_content {
+  height: 90px;
+}
+
+.container {
+  position: relative;
+}
+
+.trigger {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  transition: background-color 0.8s;
+}
+
+.trigger:hover {
+  background-color: #cfd0d1;
+}
+
+.dialog-box {
+  display: none;
+  background-color: #ffff;
+  border: 1px solid #ccc;
+  padding-bottom: 30px;
+  padding-right: 80px;
+  position: absolute;
+  left: -230%; /* Adjust this value to control the position to the left */
+  width: 200px;
+  top: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container:hover .dialog-box {
+  display: flex;
+  pointer-events: auto;
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list {
+  list-style: none;
+  padding-top: -20px;
+}
+
+li {
+  margin-top: 20px;
+  padding-right: 50px;
+}
+
+li:hover {
+  font-weight: 600;
+  background-color: #bdbaba;
+}
+
+.first_block_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.image_content {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+  background-color: rgba(36, 37, 42, 255);
+  box-sizing: content-box;
+  position: relative;
+  width: 304px;
+  height: 404px;
+}
+
+.shirt_image {
+  width: 200px;
+  margin: auto;
+}
+
+.size {
+  background-color: rgba(136, 177, 129, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Roboto", "sans-serif";
+  position: absolute;
+  top: 384px;
+  left: 225px;
+}
+
+.jacket_size {
+  padding-left: 15px;
+}
+
+.img_price {
+  color: rgba(124, 125, 126, 255);
+}
+
+.text_content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  font-size: 23px;
+  font-family: "Roboto", "sans-serif";
+  color: #ffff;
+}
+
+.item_price {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", "sans-serif";
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn button {
+  background-color: rgba(42, 43, 48, 255);
+  border: 1px solid rgba(170, 170, 170, 255);
+  padding: 10px 15px 10px 15px;
+  color: rgba(170, 170, 170, 255);
+}
+
+.footer_content {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 900px;
+}
+
+.list_footer {
+  color: #ffff;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
+}
