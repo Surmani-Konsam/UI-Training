@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
+/*hello world*/
+
 /* common css styling for all the elements*/
 body {
   background-color: #2a2b30;
@@ -30,6 +32,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #2a2b30;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -70,11 +73,11 @@ Top is made little close from 90px to 80px for enabling hover over the list elem
   display: none;
   background-color: #ffff;
   border: 1px solid #ccc;
-  padding-bottom: 20px;
-  padding-right: 70px;
+  padding-bottom: 10px;
+  padding-right: 60px;
   position: absolute;
-  right: 0; /* Adjust this value to control the position to the left */
-  width: 180px;
+  right: 0;
+  width: 160px;
   top: 80px;
   z-index: 1;
   pointer-events: none;
@@ -93,8 +96,10 @@ Top is made little close from 90px to 80px for enabling hover over the list elem
   padding-top: -20px;
 }
 
-li {
-  padding-top: 25px;
+.list li {
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 li:hover {
@@ -135,7 +140,6 @@ li:hover {
   margin: auto;
 }
 
-
 /* size for the size of the shirt displayed S and M*/
 .size {
   background-color: #88b181ff;
@@ -152,7 +156,6 @@ li:hover {
   right: 2vw;
 }
 
-
 /* fa-star icon used on the top right of the main image content*/
 .fa-star {
   color: #88b282;
@@ -161,8 +164,6 @@ li:hover {
   font-size: 1.2vw;
   position: absolute;
 }
-
-
 
 /*jacket_size segregated separately for the position issue*/
 .jacket_size {
@@ -177,12 +178,10 @@ li:hover {
   width: 24%;
 }
 
-
 /*main price of the image used for coloring*/
 .img_price {
   color: #7c7d7eff;
 }
-
 
 /* main parent container of the item description and price of the item*/
 .text_content {
@@ -191,7 +190,6 @@ li:hover {
   flex-direction: column;
   width: 100%;
 }
-
 
 /*item name -> Bath wardrob, jackets, shirt, tshirt */
 .item {
@@ -212,7 +210,6 @@ li:hover {
   margin-top: 20px;
 }
 
-
 /* main button child of the btn container*/
 .btn button {
   background-color: #2a2b30ff;
@@ -221,7 +218,6 @@ li:hover {
   color: #aaaaaaff;
   font-size: 0.8vw;
 }
-
 
 /*main footer content of the page comprising -> jackets, shirts, trousers, pants and shoes */
 .footer_content {
@@ -240,10 +236,11 @@ li:hover {
   color: #ffff;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 20px;
   font-weight: 500;
   padding: 0;
+  width: 50%;
 }
 
 .second_block_container {
@@ -251,7 +248,7 @@ li:hover {
 }
 
 /* media query for max width 675 px*/
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 765px) {
   main {
     margin-top: -50px;
   }
@@ -259,6 +256,11 @@ li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .brand {
+    height: auto;
+    width: 19vw;
   }
 
   .bloc_image {
@@ -279,7 +281,7 @@ li:hover {
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    top: 10px;
+    top: 0px;
     z-index: 1;
     width: 100%;
     margin-top: -20px;
@@ -289,17 +291,18 @@ li:hover {
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .image_content {
     display: flex;
     flex-direction: column;
     background-color: #24252aff;
     box-sizing: content-box;
     position: relative;
-    width: 75%;
+    width: 100%;
     height: 80vw;
     margin: auto;
   }
@@ -313,9 +316,10 @@ li:hover {
     color: #ffff;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 3vw;
     font-weight: 500;
+    padding: 0;
     width: 100%;
   }
 
@@ -339,5 +343,45 @@ li:hover {
     right: 1.2vw;
     font-size: 5vw;
     position: absolute;
+  }
+
+  .size {
+    background-color: #88b181ff;
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-left: 2.5vw;
+    padding-top: 1.2vw;
+    font-weight: 700;
+    font-size: 4vw;
+    position: absolute;
+    bottom: -2vw;
+    right: 2vw;
+  }
+
+  .btn button {
+    background-color: #2a2b30ff;
+    border: 1px solid #aaaaaaff;
+    padding: 10px 15px 10px 15px;
+    color: #aaaaaaff;
+    font-size: 3vw;
+  }
+
+  .item {
+    font-size: 4.5vw;
+    color: #ffff;
+    width: 100%;
+  }
+
+  .item_price {
+    margin-top: 5px;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+
+  .jacket_size {
+    padding-left: 2vw;
+    padding-top: 1.2vw;
   }
 }
