@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitback furniture</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .links {
+        color: #fff;
+        margin-right: 65px;
+        padding-top: 10px;
+        font-size: 11px;
+      }
+
+      .images{
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        width:440px;
+      }
+
+      .image_container{
+        text-align: center;
+        margin-top: 45px;
+        
+      }
+
+      .header_container{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .form_div{
+        margin-top:10px;
+      }
+
+      .input_box{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+      }
+
+      .header{
+        font-size: 35px;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <!--parent container-->
+    <div style="margin-top: 20px;">
+      <!--header with nav-bar-->
+      <h2 style="text-align: center; font-size: 25px; font-family: sans-serif; word-spacing: 8px;">SITBACK FURNITURE</h1>
+        <div style="text-align: center; background-color: black;padding-top: 20px; padding-bottom: 20px; padding-left: 70px; margin-top: 20px;">
+          <span class="links">COUCHES</span>
+          <span class="links">CHAIRS</span>
+          <span class="links">DINING</span>
+        </div>
+      <!--end header with navbar-->
+
+      <!--Main content-->
+        <!--Main content header-->
+        <div class="header_container">
+            <h1 class="header" style="font-size: 35px; font-family: sans-serif;">Your Home, With Love</h1>
+            <h2 class="below_header" style="font-size:20px; margin-top: 15px;  font-family: sans-serif;">Choose from a zillion collections</h2>
+        </div>
+        <!--Main content header end-->
+
+      <!--Main content image list-->
+        <div class="image_container">
+            <img src="images/couches.png" alt="couches not available" class="images">
+            <img src="images/chairs.png" alt="chairs not available" class="images">
+            <img src="images/dining.png" alt="dining not available" class="images">
+        </div>
+      <!--main content image list end-->
+
+        <!--last content of main content-->
+        <div style="text-align: center; margin-top: 40px;">
+            <h2 class="header">Our Products, Our Pride</h2>
+            <div style="display: inline-block; margin-top: 20px; width: 550px">
+              <p style="font-stretch: 40%; font-family: 'Roboto', sans-serif; line-height: 1.8; word-spacing: 2px;">
+                Furniture is a big deal in the design industry. A well-executed concept can result
+                in a timeless piece of furniture that never goes out of style. "Furniture builds up
+                over time the more the furniture records traces of the owner's whereabouts
+                and lifestyle, the more it will increase its value for the owner," says Johansen.
+                "The leather's ability to expand is utilized as the owner has the opportunity
+                to influence and shape the product with time."
+              </p> 
+            </div>
+
+            <!--main content last content anchor tag-->
+            <div style="margin-top: 20px;">
+                <a href="https://www.google.com/" target="_blank" style="text-decoration: none; color: blue; font-size: large;">Take me to Google</a>
+            </div>
+            <!--main content last content anchor tag-->
+
+            <!--main content last content form box-->
+            <div style="margin-top: 40px;">
+                <h2 style="font-size: 35px; font-family: sans-serif;">Contact Us</h2>
+                <form action="#" style="margin-top: 30px;">
+                    <div class="form_div">
+                        <input class="input_box" type="text" name="input_text" placeholder="Your Name" size="50"/>
+                    </div>
+                    
+                    <div class="form_div">
+                        <input class="input_box" type="tel" name="contact number" placeholder="Contact Number" size="50"/>
+                    </div>
+                    
+                    <div class="form_div">
+                        <input class="input_box" ype="email" name="email_id" placeholder="Email Address" size="50">
+                    </div>
+                    
+                    <div class="form_div">
+                        <input class="input_box" ype="date" name="dob" placeholder="Year of Birth" style="width:341px">
+                    </div>
+                    
+                    <div class="form_div">
+                        <input class="input_box" list="statelist" name="states" size="50" placeholder="State">
+                            <datalist id="statelist">
+                                <option value="Assam">
+                                <option value="Manipur">
+                                <option value="Nagaland">
+                                <option value="Bangalore">
+                                <option value="Chennai">
+                            </datalist>
+                    </div>   
+                </form>
+              <!--main content last content form box ends-->
+            </div>
+        </div>
+        <!--last main content end-->
+    </div>
+    <!--parent container end.-->
+    
+  </body>
+</html>
