@@ -1,55 +1,64 @@
+/*imported google fonts style for roboto font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;400;500;700&display=swap");
+
+/*common styling for all in div tag */
 body {
   background-color: black;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", "sans-serif";
 }
 
+/* starts -> header content with email id and designation */
 .initial_header {
   margin-top: 40px;
   display: flex;
   flex-direction: row-reverse;
   color: #ffff;
   margin-bottom: -8px;
-  font-family: "Roboto", "sans-serif";
   font-weight: 600;
   width: 88.4%;
 }
 
-.flex_container_shrutti {
+.user_designation {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ffff;
   margin-top: 60px;
+  position: sticky;
+  top: 0px;
+  background-color: #000000;
 }
 
-.shrutti {
-  font-size: 60px;
+.email_container {
+  font-size: 6vw;
   font-weight: 700;
-  font-family: "Roboto", "sans-serif";
 }
 
-.shrutti_first_name {
-  font-size: 60px;
+.user_first_name {
+  font-size: 6vw;
   font-weight: 300;
-  font-family: "Roboto", "sans-serif";
 }
 
 .designer {
   font-size: 25px;
   color: #ffff;
-  font-family: "Roboto", "sans-serif";
   margin-top: 20px;
 }
 
 .product {
-  color: rgba(74, 144, 226, 255);
+  color: #4a90e2ff;
 }
 
-.flex_container_items {
+/*end of header content with email id and designation */
+
+/* starting of main image content with image wrapped up in two blocks -> first_block and second_block*/
+.image_container_items {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   margin-top: 50px;
 }
 
@@ -72,45 +81,79 @@ body {
   margin-left: 20px;
   margin-bottom: 20px;
 }
+/* end of main image content with image wrapped up in first_block and second_block*/
 
-.icons {
-  width: 5%;
-  height: 26px;
-}
+/* footer content with footer header and footer brands list such as spotify, adidas, lufthansa, ikea and mont blanc*/
 
-.show_off_items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 50px;
-  /* border: 2px solid #ffff; */
-  width: 87%;
-  margin: auto;
-}
-
-.show_off {
-  font-size: 200%;
-  color: rgba(206, 206, 206, 255);
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-
-.show_off_name {
-  color: rgba(184, 233, 134, 255);
-}
-
-.flex_container_footer {
+.footer_container {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
 
+.footer_header {
+  font-size: 200%;
+  color: #cececeff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.footer_header_content {
+  color: #b8e986ff;
+}
+
+.client_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 78%;
+  margin: auto;
+  position: relative;
+  height: 60px;
+  z-index: -1;
+}
+
+.icons {
+  width: 7vw;
+  height: 2.6vw;
+}
+
+.spotify {
+  height: 2.9vw;
+  width: 7vw;
+}
+
+.adidas {
+  width: 6vw;
+  height: 4.5vw;
+}
+
+.lufthansa {
+  width: 14vw;
+  height: 1.8vw;
+}
+
+.ikea {
+  width: 10vw;
+}
+
+.mont_blanc {
+  height: 3.4vw;
+}
+
+/* end of footer container with brands name and footer header -> brand name to show off */
+
+/*starting of : ending footer content with header, font awesome icons and conclusive text 'passion'*/
 .separator {
-  color: white;
+  color: #ffff;
   text-align: center;
   margin-top: 200px;
+}
+
+.separator_line {
+  margin-left: 26px;
 }
 
 .favicons {
@@ -127,24 +170,180 @@ body {
 .awesome_icon {
   border: 2px solid #ffff;
   border-radius: 50%;
-  width: 44px;
+  width: 3vw;
+  height: 3vw;
   margin-left: 20px;
   position: relative;
 }
 
+.first_separator {
+  display: inline-block;
+  width: 2vw;
+}
+
+.second_separator {
+  display: inline-block;
+  width: 12vw;
+}
+
 .icon {
-  font-size: 25px;
-  margin-left: 50px;
-  margin-right: 20px;
+  font-size: 1.6vw;
   position: absolute;
-  right: -10px;
-  top: 9px;
+  bottom: 0.7vw;
+  right: 0.9vw;
+}
+
+.fa-facebook-f {
+  right: 1vw;
+}
+
+.fa-twitter {
+  right: 0.6vw;
+}
+
+.fa-instagram {
+  right: 0.8vw;
+}
+
+.fa-basketball {
+  right: 0.7vw;
+}
+
+.font_m {
+  font-family: "Abril Fatface";
+  font-size: 1.6vw;
+  position: absolute;
+  bottom: -1.1vw;
+  right: 0.8vw;
 }
 
 .passion {
   color: #ffff;
   text-align: center;
   margin-top: 80px;
-  font-family: "Roboto", "sans-serif";
   margin-bottom: 100px;
+}
+
+/*ending of : ending footer content with header, font awesome icons and conclusive text 'passion'*/
+
+/* media query used with only screen at breakpoint of max-width : 675px */
+@media only screen and (max-width: 675px) {
+  .initial_header {
+    width: 100%;
+    font-size: 2.6vw;
+    justify-content: center;
+  }
+
+  .designer {
+    font-size: 4vw;
+  }
+
+  .email_container {
+    font-size: 7vw;
+  }
+
+  .user_first_name {
+    font-size: 7vw;
+  }
+
+  .first_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .second_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_content {
+    width: 80%;
+    height: 80%;
+    margin-left: 0;
+  }
+
+  .footer_header {
+    font-size: 6vw;
+    color: #cececeff;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+
+  .awesome_icon {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .spotify {
+    height: 4.3vw;
+    width: 11vw;
+  }
+
+  .audi {
+    width: 7.8vw;
+    height: 3.6vw;
+  }
+
+  .adidas {
+    width: 9vw;
+    height: 6vw;
+  }
+
+  .lufthansa {
+    width: 16vw;
+    height: 2.6vw;
+  }
+
+  .ikea {
+    width: 12vw;
+  }
+
+  .mont_blanc {
+    height: 4vw;
+  }
+
+  .icon {
+    font-size: 3.6vw;
+    bottom: 1.7vw;
+  }
+
+  .fa-facebook-f {
+    right: 2.4vw;
+  }
+
+  .fa-twitter {
+    right: 1.6vw;
+  }
+
+  .fa-instagram {
+    right: 1.8vw;
+  }
+
+  .fa-basketball {
+    right: 1.7vw;
+  }
+
+  .font_m {
+    font-size: 3.6vw;
+    bottom: -2.4vw;
+    right: 2.1vw;
+  }
+
+  .passion {
+    font-size: 4vw;
+  }
+
+  .first_separator {
+    display: inline-block;
+    width: 6vw;
+  }
+
+  .second_separator {
+    display: inline-block;
+    width: 26vw;
+  }
 }

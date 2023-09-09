@@ -10,10 +10,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/css/assignment7.css" />
-    <style>
-      /*imported google fonts style for roboto font*/
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
-    </style>
   </head>
   <body>
     <!--parent-container-->
@@ -25,9 +21,9 @@
       <!--end-->
 
       <!--Shrutti designation and role-->
-      <article class="flex_container_shrutti">
-        <section class="shrutti">
-          <span class="shrutti_first_name">Shrutti</span> Bhatt
+      <article class="user_designation">
+        <section class="email_container">
+          <span class="user_first_name">Shrutti</span> Bhatt
         </section>
         <section class="designer">
           a <span class="product">product</span> designer
@@ -36,7 +32,7 @@
       <!--end of shrutti designation-->
 
       <!--all the main flex images on the centre of the page-->
-      <article class="flex_container_items">
+      <article class="image_container_items">
         <!--flex box of images divided into two for flex-direction column and adding to each block invidually-->
         <!--start of the fist block-->
         <div class="first_block">
@@ -89,13 +85,13 @@
       </article>
 
       <!--footer container containing Header show off and images(show_off_items)-->
-      <article class="flex_container_footer">
-        <div class="show_off">
-          Big names to <span class="show_off_name">show off</span>
+      <article class="footer_container">
+        <div class="footer_header">
+          Big names to <span class="footer_header_content">show off</span>
         </div>
 
         <!--list of show_off icons-->
-        <section class="show_off_items">
+        <section class="client_items">
           <img
             class="icons spotify"
             src="assets/images/logos/logo_1.png"
@@ -133,7 +129,10 @@
 
       <!--footer_content containing separation and font awesome icons-->
       <footer class="footer_content">
-        <article class="separator">_ ____________________________</article>
+        <article class="separator">
+          <hr class="first_separator" />
+          <span class="separator_line"><hr class="second_separator"/></span>
+        </article>
 
         <!--font awesome icons-->
         <article class="favicons">
@@ -150,7 +149,7 @@
             <i class="fa-solid fa-basketball icon"></i>
           </div>
           <div class="awesome_icon">
-            <i class="fa-sharp fa-solid fa-m icon"></i>
+            <p class="font_m">M</p>
           </div>
         </article>
         <!-- end of font awesome icons-->
