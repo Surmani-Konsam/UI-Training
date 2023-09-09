@@ -34,7 +34,7 @@ main {
   justify-content: space-between;
   background-color: #2a2b30;
   position: sticky;
-  top: 0;
+  top: 4px;
   z-index: 1;
   width: 100%;
 }
